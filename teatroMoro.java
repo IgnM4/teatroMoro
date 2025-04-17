@@ -60,12 +60,12 @@ public class teatroMoro {
 
         while (true) {
             try {
-                System.out.print("¿Cuántas entradas desea comprar? ");
+                System.out.print("Cuantas entradas desea comprar? ");
                 cantidadEntradas = Integer.parseInt(sc.nextLine());
 
                 int disponibles = asientosPorZona - asientosOcupados.get(zonaSeleccionada).size();
                 if (cantidadEntradas <= 0 || cantidadEntradas > disponibles) {
-                    System.out.println(" Cantidad inválida o excede los asientos disponibles (" + disponibles + ").");
+                    System.out.println(" Cantidad invalida o excede los asientos disponibles (" + disponibles + ").");
                 } else {
                     break;
                 }
